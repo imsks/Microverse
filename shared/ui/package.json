@@ -1,0 +1,14 @@
+{
+  "name": "@microverse/shared-ui",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "build": "echo 'Shared UI library - no build needed for now'"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {}
+}

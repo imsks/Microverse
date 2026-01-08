@@ -1,0 +1,17 @@
+{
+    "name": "microverse",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "host",
+        "remotes/*",
+        "shared/*"
+    ],
+    "scripts": {
+        "dev": "yarn workspaces run dev",
+        "build": "yarn workspaces run build",
+        "clean": "yarn workspaces run clean"
+    },
+    "devDependencies": {},
+    "resolutions": {}
+}
