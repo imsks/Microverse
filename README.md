@@ -1,10 +1,14 @@
-# Microverse - Micro Frontend Playground
+# Microverse - E-commerce Micro Frontend
 
-A learning playground for building micro-frontend architectures with Webpack Module Federation.
+A 2-3 day learning project: Build an e-commerce UI using Webpack Module Federation.
 
-## Getting Started
+**What we're building:**
+- Host app (container/shell)
+- Products remote (product listings from Fake Store API)
+- Cart remote (shopping cart)
+- Shared UI components
 
-This project will be built step-by-step. Follow the instructions in `TOPICS.md` for each phase.
+**No custom backend needed** - Using public APIs only!
 
 ## Project Structure
 
@@ -13,8 +17,8 @@ Microverse/
 ├── package.json       # Root workspace config (Yarn Workspaces)
 ├── host/              # Container application (@microverse/host)
 ├── remotes/
-│   ├── marketing/     # Marketing remote (@microverse/marketing)
-│   └── auth/          # Auth remote (@microverse/auth)
+│   ├── products/      # Products remote (@microverse/products)
+│   └── cart/          # Cart remote (@microverse/cart)
 ├── shared/
 │   └── ui/            # Shared UI library (@microverse/shared-ui)
 └── docs/              # Documentation and learning notes
