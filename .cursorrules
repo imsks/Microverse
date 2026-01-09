@@ -1,0 +1,13 @@
+# Microverse Project Rules
+
+## Code Writing Policy
+- **DO NOT write actual code** (React components, webpack configs, etc.)
+- **ONLY provide instructions** and guidance
+- User will write all code themselves
+- Explain concepts, architecture, and step-by-step instructions only
+
+## Documentation Style
+- Create detailed instruction files in `docs/` folder
+- Explain WHY each step is needed
+- Include common pitfalls and solutions
+- Reference interview questions and tradeoffs
