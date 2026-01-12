@@ -32,10 +32,20 @@ module.exports = {
     new HtmlWebpackPlugin({ template: './public/index.html' }),
     new webpack.container.ModuleFederationPlugin({
       name: 'host',
-      remotes: {},
+      remotes: {
+        products: 'products@http://localhost:3001/remoteEntry.js'
+      },
       shared: {
-        react: { singleton: true },
-        'react-dom': { singleton: true }
+        react: { 
+          singleton: true,
+          requiredVersion: false,
+          eager: true
+        },
+        'react-dom': { 
+          singleton: true,
+          requiredVersion: false,
+          eager: true
+        }
       }
     })
   ],

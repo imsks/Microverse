@@ -31,10 +31,10 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({ template: './public/index.html' }),
         new webpack.container.ModuleFederationPlugin({
-            name: 'products',
+            name: 'cart',
             filename: 'remoteEntry.js',
             exposes: {
-                './ProductList': './src/ProductList'
+                './Cart': './src/Cart'
             },
             shared: {
                 react: { 
@@ -49,7 +49,7 @@ module.exports = {
         })
     ],
     devServer: {
-        port: 3001,
+        port: 3002,
         hot: true,
         open: true
     }

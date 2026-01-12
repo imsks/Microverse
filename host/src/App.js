@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import Products from './components/Products'
 
 const App = () => {
   return (
@@ -6,7 +7,7 @@ const App = () => {
       <header>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/products">Products</Link>
+          <Route path="/products" element={<Products />} />
           <Link to="/cart">Cart</Link>
         </nav>
       </header>
@@ -19,7 +20,7 @@ const App = () => {
       </main>
       <footer>Microverse E-commerce</footer>
     </BrowserRouter>
-  );
+  )
 }
 
 export default App
